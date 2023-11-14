@@ -1,0 +1,138 @@
+
+body{
+    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+h1{
+    text-align: center;
+    font-size: 70px;
+}
+
+article{
+    opacity: 0;
+    transform: translateY(-13%);
+    animation: slideIn 5s forwards;
+}
+
+@keyframes slideIn{
+
+    from {
+        opacity: 0;
+        transform: translateY(-13%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+main :nth-child(2){
+    text-align: center;
+    font-size: 30px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.parc-article{
+    display: flex;
+    align-items: center;
+}
+
+.parc-article img{
+    width: 40%;
+    border-radius: 5px;
+    margin: 30px 120px 10px 50PX;
+}
+
+.parc-article p{
+    font-size: 20px;
+    width: 90%;
+}
+
+
+.parc-article h2{
+    display: block;
+    font-size: 40px;
+}
+
+main :nth-child(4){
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+main :nth-child(4) img{
+    margin: 30px 50px 10px 120PX;
+}
+
+main :nth-child(4) div{
+    margin-left: 30px;
+}
+
+main :nth-child(6){
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+main :nth-child(6) img{
+    margin: 30px 50px 10px 120PX;
+}
+
+main :nth-child(6) div{
+    margin-left: 30px;
+}
+
+button{
+    padding: 20px 70px;
+    background-color: #42BFDD;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: translateY(-3px);
+    transition: transform 0.3s ease-in-out;
+
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+select{
+    border: none;
+}
+
+@media (max-width: 870px) {
+    .parc-article p{
+        font-size: 15px;
+        
+    }
+
+    main h1{
+        font-size: 50px;
+    }
+
+    main :nth-child(2){
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 730px) {
+    .parc-article p{
+        font-size: 12px;
+        width: 100%;
+    }
+}

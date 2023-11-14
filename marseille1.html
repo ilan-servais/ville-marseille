@@ -3,30 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="marseille1.css">
+    <link rel="stylesheet" href="css/marseille1.css">
     <title>Ville de marseille | Histoire</title>
 </head>
 <body>
     <header>
+        <img src="images/logo_0.png" alt="logo ville de marseille" class="logo">
         <nav>
-
+            <select id="pages-dropdown" onchange="location = this.value;">
+                <option value="" selected disabled>Choisir une page</option>
+                <option value="marseille.html">accueil</option>
+                <option value="marseille1.html">histoire</option>
+                <option value="marseille2.html">Randonnées</option>
+                <option value="marseille3.html">Plages</option>
+                <option value="marseille4.html">Parcs</option>
+                <option value="marseille5.html">Musées</option>
+                <option value="marseille6.html">Contact</option>
+            </select>
         </nav>
     </header>
-    <h1>L'histoire de Marseille</h1>
-    <p>Avec ses 2600 ans d’existence, la doyenne des villes françaises regorge d’histoires toujours plus invraisemblables. Découvrir Marseille consiste donc à se plonger dans un grand livre pour mieux comprendre son extraordinaire patrimoine, ses monuments, ses 111 quartiers… Ville touristique accueillant près de 6 millions de touristes, la cité phocéenne réserve aussi à ses nouveaux arrivants une foultitude de surprises.</p>
+    <div class="container">
+        <h1>L'histoire de Marseille</h1>
+        <p>Avec ses 2600 ans d’existence, la doyenne des villes françaises regorge d’histoires toujours plus invraisemblables. Découvrir Marseille consiste donc à se plonger dans un grand livre pour mieux comprendre son extraordinaire patrimoine, ses monuments, ses 111 quartiers… Ville touristique accueillant près de 6 millions de touristes, la cité phocéenne réserve aussi à ses nouveaux arrivants une foultitude de surprises.</p>
+    
+    </div>
     <main>
         <section>
-            <div>
+            <div class="section-text">
                 <h2>L'union de Gyptis et de Prôtis, le mythe de la fondation de Marseille</h2>
                 <p>Vers 600 av. J.-C., des Grecs d’Asie Mineure, actuelle Turquie, quittent Phocée pour fonder une cité dans la calanque du Lacydon. Au début du VIe siècle av. J.-C., un premier habitat s’organise dans l’actuel quartier du Panier, au-dessus du port situé dans la calanque. Les Phocéens utilisent la position favorable du site de Marseille, à l’abri des vents dominants, la protection des îles du Frioul et la proximité avec le Rhône pour commercer avec les Gaulois. Le mythe de fondation de Massalia décrit la rencontre entre un marin grec, Prôtis, et une princesse gauloise, Gyptis. Son père, Nannos, le roi des Ségobriges, donne en cadeau de mariage le territoire de Massalia, qui est la plus ancienne ville de France. Il est possible que les citoyens de Phocée émigrent une seconde fois en 546 av. J.-C., chassés par les Perses. Ils apportent avec eux leur religion, leur langue, des techniques de construction, la culture de la vigne et de l’olivier et des produitscommerciaux de Méditerranée comme le vin et des vases en céramique. De la rencontre entre Grecs et Gaulois va naître une riche culture, en dépit de nombreux conflits territoriaux.</p>
             </div>
-            <iframe src="https://youtu.be/tOPqG1C-9R4?feature=shared&t=7" frameborder="0"></iframe>
+            <iframe src="https://www.youtube.com/watch?v=w6v9KGzMrv4" frameborder="0"></iframe>
         </section>
-       
+        <H2>Les vestiges de la citée phocéenne</H2>
+       <article>
+        <img src="images/fort-saint-jean.jpg__400x270_q85_crop_subject_location-838,543_subsampling-2.jpg" alt="image du fort saint-jean">
+        <div class="section-text article-text">
+            <h2>MARSEILLE ET SES 84 MONUMENTS HISTORIQUES</h2>
+            <p>De par son histoire, Marseille concentre un grand nombre de monuments historiques qui doivent être préservés. Il est important en effet, de conserver cette part de l’histoire et de la transmettre aux futures générations. Des Églises, des Chapelles, des châteaux, des palais... Tous ces bâtiments sont des vestiges de l’histoire de Marseille et vous feront voyager dans le temps, de l’époque gréco-romaine à la Seconde Guerre Mondiale en passant par la Grande Peste de 1720.</p>
+        </div>    
+    </article>
     </main>
     <footer>
+        <img src="images/logo_0.png" alt="logo ville de marseille" class="logo">
         <nav>
-
+            <select id="pages-dropdown" onchange="location = this.value;">
+                <option value="" selected disabled>Choisir une page</option>
+                <option value="index.html">index</option>
+                <option value="histoire.html">histoire</option>
+                <option value="randonnees.html">Randonnées</option>
+                <option value="plages.html">Plages</option>
+                <option value="parcs.html">Parcs</option>
+                <option value="musees.html">Musées</option>
+                <option value="contact.html">Contact</option>
+            </select>
         </nav>
     </footer>
 </body>
