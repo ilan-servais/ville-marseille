@@ -1,79 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="marseille4.css">
-    <title>Ville de Marseille | Parcs</title>
+    <title>Les Musées - Marseille</title>
 </head>
 <body>
-    <header>
-        <nav>
-         <select id="pages-dropdown" onchange="location = this.value;">
-             <option value="" selected disabled>Choisir une page</option>
-             <option value="index.html">index</option>
-             <option value="histoire.html">histoire</option>
-             <option value="randonnees.html">Randonnées</option>
-             <option value="plages.html">Plages</option>
-             <option value="parcs.html">Parcs</option>
-             <option value="musees.html">Musées</option>
-             <option value="contact.html">Contact</option>
-         </select>
-        </nav>
-    </header>
+
+    <!-- Barre de navigation A DELETE -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <!-- Ajoutez d'autres liens de navigation au besoin -->
+            <li><a href="musees.html">Musées</a></li>
+            <!-- Ajoutez d'autres liens de navigation au besoin -->
+        </ul>
+    </nav>
+
+    <!-- Image de la vue de Marseille -->
+                    <img src="https://drive.google.com/uc?id=1EOJpPHz6S3Ym5l8Ww2e-49k99KqH5LmR" alt="Vue de Marseille" class="responsive-image">
+    <!-- Contenu de la page -->
     <main>
-            <h1>Parc</h1>
-            <P>Découvrez la liste de tous les parcs et jardins à Marseille. En cœur urbain, en bord de mer ou plus éloignés de la ville, trouvez celui qui correspond à vos envies !</P>
-            <article class="histoire-article">
-                <img src="images/parc-borely-vue-du-chteau-sur-lentre-principale-obj-imageotcm-640x480.webp" alt="image du parc borely a marseille">
-                <div class="histoire-container">
-                    <H2>Parc borely</H2>
-                    <p>Situé dans le 8ème arrondissement de Marseille, juste à côté de l’hippodrome et des plages du Prado, le Parc Borély nous charme avec ses bassins, ses nombreuses sculptures et ses différents jardins. Il est l’endroit parfait pour pique-niquer, faire son sport ou tout simplement se détendre au soleil.</p>
-                    <a href="https://www.google.com/maps/place/Parc+Bor%C3%A9ly/@43.260334,5.3823007,15z/data=!4m6!3m5!1s0x12c9c76901bcdb2b:0xd3caf822c315d3d4!8m2!3d43.260334!4d5.3823007!16s%2Fm%2F05myd40?entry=ttu" target="_blank">
-                        <button>M'y rendre</button>
-                    </a>
+        <section id="musees">
+            
+            <h1>Mucem</h1>
+            <a href="#Mucem">
+                <div class="container">
+                    <img src="https://drive.google.com/uc?id=1fRTHwhBIevrHuF554wOTSUMu8Wj7mHZt" alt="Avatar" class="image">
+                    <div class="overlay">
+                        <div class="text">Héritier du musée d’Ethnographie du Trocadéro et du musée national des Arts et traditions populaires, le Mucem oriente depuis 2005 la politique d’enrichissement de ses collections et fonds ethnographiques vers l’Europe et la Méditerranée.</div>
+                    </div>
                 </div>
-            </article> 
-            <article class="histoire-article">
-                <img src="images/parc_bagatelle_02.jpg" alt="image du parc bagatelle a marseille">
-                <div class="histoire-container">
-                    <H2>Parc de la Bagatelle</H2>
-                    <p>Le parc de la Bagatelle est un parc de la mairie des 6 et 8e arrondissements. Il s’étend sur 1,3 hectares de terrain. Ce parc est très apprécié des promeneurs. On y trouve des espèces végétales rares et un grand nombre de végétaux de sous-bois et horticoles. Le parc est doté de grandes allées ombragées et bordés de massifs de fleurs.</p>
-                    <a href="https://www.google.com/maps/place/Parc+de+Bagatelle/@43.2693834,5.3815683,15z/data=!4m2!3m1!1s0x0:0xa24938df8d189ad3?sa=X&ved=2ahUKEwi4jc-gl8GCAxW4VKQEHbPuBKkQ_BJ6BAgwEAA" target="_blank">
-                        <button>M'y rendre</button>
-                    </a>
-                 </div>
-            </article> 
-            <article class="histoire-article">
-                <img src="images/palais-longchamp-exterieurjootcm-21-1920x960.jpg" alt="image du palais longchamp a marseille">
-                <div class="histoire-container">
-                    <H2>Parc longchamp</H2>
-                    <p>Il est un des plus beaux parcs de Marseille, et sans doute, un des plus appréciés des Marseillais. Situé en plein centre-ville, avec près de 8 hectares de verdure, il surprend dès notre entrée avec ses fontaines et ses cascades monumentales. Découvrez un lieu hors du temps à deux pas de la Canebière !</p>
-                    <a href="https://www.google.com/maps/place/Palais+Longchamp/@43.3042669,5.3946029,15z/data=!4m2!3m1!1s0x0:0xe8758c4ddd3ba377?sa=X&ved=2ahUKEwjQk9_glsGCAxWIUaQEHTD4BegQ_BJ6BAgvEAA" target="_blank">
-                        <button>M'y rendre</button>
-                    </a>
+            </a>
+    
+            <h1>Musée des Beaux Arts</h1>
+            <a href="#Beaux-Arts">
+                <div class="container">
+                    <img src="https://drive.google.com/uc?id=1q_vPB5YVA9Rkk2f3MURpXcyx4qRfbZyL" alt="Avatar" class="image">
+                    <div class="overlay">
+                        <div class="text">Le Musée des Beaux-Arts de Marseille est un des quinze premiers musées créés en France par le Consulat en 1801. Il est installé depuis 1869 dans l’aile gauche du Palais Lonchamp et présente des œuvres du XVIe au XIXe siècles.</div>
+                    </div>
                 </div>
-            </article> 
-            <article class="histoire-article">
-                <img src="images/arbre-de-l-esperance-parc-du-26eme-centenaire-marseille-27.jpg" alt="image du parc de l'esperance a marseille">
-                <div class="histoire-container">
-                    <H2>Parc du 26e centenaire</H2>
-                    <p>Situé en plein coeur de Marseille, le Parc du 26e centenaire s'étend sur 10,5 hectares. Il a été aménagé sur le site de l'ancienne gare du Prado. De conception très contemporaine, le parc s'inscrit cependant dans la mémoire commune, faisant référence aux vingt-six siècles d'histoire de la Ville. Certains vestiges conservés de la gare sont les témoins d'un passé encore vivant dans le souvenir de nombreux Marseillais. L'eau y est omniprésente et fait écho à "l'Arbre de l'Espérance" qui se dresse à l'entrée principale.</p>
-                    <a href="https://www.google.com/maps/place/Parc+du+26e+Centenaire/@43.2806194,5.394651,15z/data=!4m6!3m5!1s0x12c9bf555003d7db:0x6fa2ff2232ca67fe!8m2!3d43.2806194!4d5.394651!16s%2Fm%2F05m_jym?entry=ttu" target="_blank">
-                        <button>M'y rendre</button>
-                    </a>
+            </a>
+    
+            <h1>MHM</h1>
+            <a href="#MHM">
+                <div class="container">
+                    <img src="https://drive.google.com/uc?id=1djTpQeHk64QWh7fkDsin9fKpndcPIzQ5" alt="Avatar" class="image">
+                    <div class="overlay">
+                        <div class="text">Ce musée de la plus ancienne ville de France permet de découvrir 26 siècles d’histoire où se mêlent archéologie, beaux arts, objets du quotidien et architecture. Il est organisé en 13 séquences ponctuées de dispositifs numériques.</div>
+                    </div>
                 </div>
-            </article> 
-            <article class="histoire-article">
-                <img src="images/parc-national-des-calanquesjorengoomtcm-10-640x480.jpeg" alt="image du parc national des calanques a marseille">
-                <div class="histoire-container">
-                    <H2>Parc national des calanques</H2>
-                    <p>Le parc national des Calanques est un parc national français, couvrant, notamment, les calanques de Marseille, dans le département des Bouches-du-Rhône, au cœur de la métropole d'Aix-Marseille-Provence. Créé en 2012, il est le premier parc national périurbain d'Europe à la fois terrestre et marin.</p>
-                    <a href="https://www.google.com/maps/place/Parc+national+des+Calanques/@43.2178391,5.4430178,15z/data=!4m6!3m5!1s0x12c9b835cfc421c9:0x1ab7a709070f209e!8m2!3d43.2178391!4d5.4430178!16s%2Fm%2F0w7ksd4?entry=ttu" target="_blank">
-                        <button>M'y rendre</button>
-                    </a>
+            </a>
+            
+            <h1>Musée de la Moto</h1>
+            <a href="#Moto"> <!-- Lien vers la section -->
+                <div class="container">
+                    <img src="https://drive.google.com/uc?id=1eEDogs23mZKTeLsdX6bmwef3Q3Qu9CY6" alt="Avatar" class="image">
+                    <div class="overlay">
+                        <div class="text">Le Musée de la Moto expose dans une ancienne minoterie une collection exceptionnelle retraçant l’histoire de la motocyclette depuis son origine en 1885 jusqu’à nos jours. De nombreux décors et scénographies mettent en lumière de plus de 250 somptueuses mécaniques.</div>
+                    </div>
                 </div>
-            </article> 
+            </a>
+            <!-- Tableau des musées -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Adresse</th>
+                        <th>Horaires du</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- lignes pour chaque musée -->
+                    <tr id="Mucem">
+                        <td>Mucem</td>
+                        <td>
+                            <p class="address-link">
+                                <a href="https://www.google.com/maps/place/Mucem+-+Mus%C3%A9e+des+civilisations+de+l'Europe+et+de+la+M%C3%A9diterran%C3%A9e/@43.2966941,5.3610825,15z/data=!4m6!3m5!1s0x12c9c09a8f9df3ed:0xa5f38246ce5239fe!8m2!3d43.2966941!4d5.3610825!16s%2Fm%2F0qfq9zj?entry=ttu" target="_blank">
+                                    1 Esp. J4, 13002 Marseille
+                                </a>
+                            </p>
+                        </td>
+                        <td>mercredi au dimanche de 10h à 18h</td>
+                    </tr>
+    
+                    <tr id="Beaux-Arts">
+                        <td>Musée des Beaux Arts</td>
+                        <td>        
+                            <p class="address-link">
+                                <a href="https://www.google.com/maps/place/Mus%C3%A9e+des+Beaux+Arts+de+Marseille/@43.3046188,5.3938911,15z/data=!4m6!3m5!1s0x12c9bf7eae793e2d:0xd2d146933c196e4d!8m2!3d43.3046188!4d5.3938911!16s%2Fm%2F046s9k1?entry=ttu" target="_blank">
+                                    Palais Longchamp Aile gauche, 13004 Marseille
+                                </a>
+                            </p>
+                        </td>
+                        <td>mardi au dimanche de 9h à 18h</td>
+                    </tr>
+    
+                    <tr id="MHM">
+                        <td>MHM - Musée d'histoire de Marseille</td>
+                        <td>  
+                            <p class="address-link">
+                                <a href="https://www.google.com/maps/place/2+Rue+Henri+Barbusse,+13001+Marseille/data=!4m2!3m1!1s0x12c9c0bfbf3b814d:0x5cc8a3f689b766b9?sa=X&ved=2ahUKEwjx_7ju2MGCAxVNUUEAHeLrD_kQ8gF6BAgVEAA" target="_blank">
+                                    2 rue Henri Barbusse, 13001 Marseille
+                                </a>
+                            </p>
+                        </td>
+                        <td>mardi au samedi de 9h à 17h</td>
+                    </tr>
+                <!-- Ligne pour le Musée de la Moto -->
+                <tr id="Moto">
+                    <tr>
+                        <td>Musée de la Moto</td>
+                        <td>
+                            <p class="address-link">
+                                <a href="https://www.google.com/maps/place/18+rue+Jean+Marsac+Quartier+du+Merlan+13013+Marseille" target="_blank">
+                                    18 rue Jean Marsac Quartier du Merlan, 13013 Marseille
+                                </a>
+                            </p>
+                        </td>
+                        <td>mardi au samedi de 9h à 17h</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
     </main>
 </body>
 </html>
