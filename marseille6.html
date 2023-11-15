@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contactez-nous</title>
+    <link rel="stylesheet" href="css/marseille6.css">
+    <script>
+        window.addEventListener('DOMContentLoaded', function () {
+            const themeSwitch = document.getElementById('theme-switch');
+            const body = document.querySelector('body');
+
+            themeSwitch.addEventListener('change', function () {
+                body.classList.toggle('dark-mode');
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+    <!-- Barre de navigation principale -->
+    <nav class="navbar" onmouseover="showMenu()" onmouseout="hideMenu()">
+        <div class="menu-btn">Menu</div>
+        <ul id="navList" class="nav-list">
+            <li><a href="marseille.html">Accueil</a></li>
+            <li><a href="marseille1.html">L’histoire de Marseille</a></li>
+            <li><a href="marseille2.html">Randonnées à proximité</a></li>
+            <li><a href="marseille3.html">Les plages</a></li>
+            <li><a href="marseille4.html">Les parcs publics</a></li>
+            <li><a href="marseille5.html">Les musées</a></li>
+        </ul>
+    </nav>
+
+    </header>
+    
+    <main>
+        <div class="main-content">
+        
+            <!-- Titre de la page -->
+            <h1>Contactez-nous</h1>
+                <!-- Contact -->
+                <div class="contactez-nous-box">
+                    <p><p>Nous apprécions énormément vos commentaires et suggestions. Votre opinion compte beaucoup pour nous et nous aide à améliorer nos services. Si vous avez des idées, des questions ou des commentaires à partager, n'hésitez pas à nous contacter. Nous sommes impatients de vous entendre !</p></p>
+                </div>
+
+            <!-- Formulaire de contact -->
+            <section class="contact-form">
+                <form action="traitement.php" method="post">
+                    <label for="civilite">Civilité :</label>
+                        <select id="civilite" name="civilite">
+                            <option value="Monsieur">Monsieur</option>
+                            <option value="Madame">Madame</option>
+                            <option value="Autre">Autre</option>
+                        </select><br><br>                
+                            <label for="nom">Nom :</label>
+                            <input type="text" id="nom" name="nom"><br><br>
+                            
+                            <label for="prenom">Prénom :</label>
+                            <input type="text" id="prenom" name="prenom"><br><br>
+                            
+                            <label for="adresse">Adresse postale :</label>
+                            <input type="text" id="adresse" name="adresse"><br><br>
+                        
+                            <label for="politique">Accepter les politiques de confidentialité :</label>
+                            <input type="checkbox" id="politique" name="politique" value="accepte"><br><br>
+                            
+                            <label for="message">Message :</label><br>
+                        <textarea id="message" name="message" required></textarea><br>
+                    <input type="submit" value="Envoyer">
+                </form>
+            </section>
+        </div>
+
+    </main>
+    
+    <!-- footer -->
+    <div class="footer">
+        <footer>
+            <div>
+                <a href="https://www.instagram.com/" target="_blank">
+                <img src="https://img.icons8.com/?size=48&id=&format=png" alt="Instagram">
+                </a>
+            
+                <a href="https://www.facebook.com/" target="_blank">
+                <img src="https://img.icons8.com/?size=48&id=yGcWL8copNNQ&format=png" alt="Facebook">
+                </a>
+            
+                <span>&copy; Tourisme </span>
+            </div>
+        </footer> 
+
+        <script>
+    // Fonctions pour afficher/cacher la liste des liens
+    function showMenu() {
+        var navList = document.getElementById("navList");
+        navList.style.display = "flex";
+    }
+
+
+    function hideMenu() {
+        var navList = document.getElementById("navList");
+        navList.style.display = "none";
+    }  
+        </script>        
+</body>
+</html>

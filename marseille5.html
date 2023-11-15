@@ -8,19 +8,22 @@
 </head>
 <body>
 
-    <!-- Barre de navigation A DELETE -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <!-- Ajoutez d'autres liens de navigation au besoin -->
-            <li><a href="musees.html">Musées</a></li>
-            <!-- Ajoutez d'autres liens de navigation au besoin -->
+    <!-- Barre de navigation principale -->
+    <nav class="navbar" onmouseover="showMenu()" onmouseout="hideMenu()">
+        <div class="menu-btn">Menu</div>
+        <ul id="navList" class="nav-list">
+            <li><a href="marseille.html">Accueil</a></li>
+            <li><a href="marseille1.html">L’histoire de Marseille</a></li>
+            <li><a href="marseille2.html">Randonnées à proximité</a></li>
+            <li><a href="marseille3.html">Les plages</a></li>
+            <li><a href="marseille4.html">Les parcs publics</a></li>
+            <li><a href="marseille6.html">Contactez-nous</a></li>
         </ul>
     </nav>
 
     <!-- Image de la vue de Marseille -->
     <img src="https://drive.google.com/uc?id=1EOJpPHz6S3Ym5l8Ww2e-49k99KqH5LmR" alt="Vue de Marseille" class="responsive-image">
-
+    <h1>Les musées</h1>
     <!-- Contenu de la page -->
     <main>
         <section id="musees">
@@ -127,5 +130,18 @@
             </table>
         </section>
     </main>
+
+    <script>
+    // Fonctions pour afficher/cacher la liste des liens
+    function showMenu() {
+        var navList = document.getElementById("navList");
+        navList.style.display = "flex";
+    }
+
+    function hideMenu() {
+        var navList = document.getElementById("navList");
+        navList.style.display = "none";
+    }  
+    </script>
 </body>
 </html>

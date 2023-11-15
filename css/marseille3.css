@@ -11,25 +11,7 @@ body {
     background-color: #F0F6F6;
 }
 
-/* Barre de navigation A DELETE */
-nav {
-    background-color: #F0F6F6;
-    padding: 10px;
-    position: relative;
-}
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-}
-
-nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    font-size: 16px;
-}
 
 /* Image responsive */
 .responsive-image {
@@ -140,4 +122,42 @@ main {
 /* Changement de couleur au survol du titre */
 .beach-link:hover {
     color: #42BFDD; /* Nuance plus foncée de bleu au survol */
+}
+
+
+/* Styles pour la barre de navigation principale */
+.navbar {
+    background-color: #084B83;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    text-align: left;
+    flex-direction: column; /* Ajout de cette ligne pour aligner le texte en dessous */
+}
+
+.menu-btn {
+    color: #F0F6F6 ;
+    cursor: pointer;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: left;
+    text-align: left;
+    flex-direction: column; /* Ajout de cette ligne pour aligner le texte en dessous */
+}
+
+.nav-list li {
+    margin-right: 15px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #F0F6F6;
+    font-weight: bold;
+    font-size: 16px;
 }

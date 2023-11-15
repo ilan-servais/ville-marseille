@@ -7,24 +7,28 @@
     <title>Les Plages - Marseille</title>
 </head>
 <body>
-
+    
+    <header>
     <!-- Barre de navigation principale -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="musees.html">Musées</a></li>
-            <li><a href="plages.html">Plages</a></li>
-            <!-- Ajoutez d'autres liens de navigation au besoin -->
+    <nav class="navbar" onmouseover="showMenu()" onmouseout="hideMenu()">
+        <div class="menu-btn">Menu</div>
+        <ul id="navList" class="nav-list">
+            <li><a href="marseille.html">Accueil</a></li>
+            <li><a href="marseille1.html">L’histoire de Marseille</a></li>
+            <li><a href="marseille2.html">Randonnées à proximité</a></li>
+            <li><a href="marseille4.html">Les parcs publics</a></li>
+            <li><a href="marseille5.html">Les musées</a></li>
+            <li><a href="marseille6.html">Contactez-nous</a></li>
         </ul>
     </nav>
-
     <!-- Image de la vue de Marseille -->
     <img src="https://drive.google.com/uc?id=1kQpigddmrlh9sr04XFJ-0g5DothcSTmo" alt="Vue de Marseille" class="responsive-image">
-
+    <h1>Les Plages de Marseille</h1>
     <!-- Contenu de la page -->
+    </header>
+    
     <main>
         <section id="plages">
-            <h1>Les Plages de Marseille</h1>
         
             <!-- Informations sur la première plage avec modal -->
             <article>
@@ -94,24 +98,35 @@
     </main>
 
     <script>
-        // Fonction pour ouvrir/fermer la modal
-        function toggleModal(modalId) {
-            var modal = document.getElementById(modalId);
-            if (modal.style.display === "none" || modal.style.display === "") {
-                modal.style.display = "flex";
-            } else {
-                modal.style.display = "none";
-            }
-        }
-                // Fonction pour ouvrir/fermer la modal en cliquant sur l'image
-        function toggleModalWithImage(modalId) {
-            var modal = document.getElementById(modalId);
-            if (modal.style.display === "none" || modal.style.display === "") {
-                modal.style.display = "flex";
-            } else {
-                modal.style.display = "none";
-            }
-        }
+    // Fonctions pour afficher/cacher la liste des liens
+    function showMenu() {
+        var navList = document.getElementById("navList");
+        navList.style.display = "flex";
+    }
+
+    function hideMenu() {
+        var navList = document.getElementById("navList");
+        navList.style.display = "none";
+    }  
+    // Fonction pour ouvrir/fermer la modal
+    function toggleModal(modalId) {
+    var modal = document.getElementById(modalId);
+    if (modal.style.display === "none" || modal.style.display === "") {
+        modal.style.display = "flex";
+    } else {
+        modal.style.display = "none";
+    }
+    }
+
+    // Fonction pour ouvrir/fermer la modal en cliquant sur l'image
+    function toggleModalWithImage(modalId) {
+    var modal = document.getElementById(modalId);
+    if (modal.style.display === "none" || modal.style.display === "") {
+        modal.style.display = "flex";
+    } else {
+        modal.style.display = "none";
+    }
+    }
     </script>
 </body>
 </html>

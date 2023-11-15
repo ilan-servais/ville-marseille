@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,18 +8,19 @@
 </head>
 <body>
     <header>
-        <nav>
-         <select id="pages-dropdown" onchange="location = this.value;">
-             <option value="" selected disabled>Choisir une page</option>
-             <option value="index.html">index</option>
-             <option value="histoire.html">histoire</option>
-             <option value="randonnees.html">Randonnées</option>
-             <option value="plages.html">Plages</option>
-             <option value="parcs.html">Parcs</option>
-             <option value="musees.html">Musées</option>
-             <option value="contact.html">Contact</option>
-         </select>
-        </nav>
+    <!-- Barre de navigation principale -->
+    <nav class="navbar" onmouseover="showMenu()" onmouseout="hideMenu()">
+        <div class="menu-btn">Menu</div>
+        <ul id="navList" class="nav-list">
+            <li><a href="marseille.html">Accueil</a></li>
+            <li><a href="marseille1.html">L’histoire de Marseille</a></li>
+            <li><a href="marseille2.html">Randonnées à proximité</a></li>
+            <li><a href="marseille3.html">Les plages</a></li>
+            <li><a href="marseille4.html">Les parcs publics</a></li>
+            <li><a href="marseille5.html">Les musées</a></li>
+            <li><a href="marseille6.html">Contactez-nous</a></li>
+        </ul>
+    </nav>
     </header>
     <main>
             <h1>Parc</h1>
@@ -74,6 +75,19 @@
                     </a>
                 </div>
             </article> 
+        <script>
+        // Fonctions pour afficher/cacher la liste des liens
+        function showMenu() {
+            var navList = document.getElementById("navList");
+            navList.style.display = "flex";
+        }
+    
+    
+        function hideMenu() {
+            var navList = document.getElementById("navList");
+            navList.style.display = "none";
+        }  
+        </script>
     </main>
 </body>
 </html>
