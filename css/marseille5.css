@@ -1,0 +1,185 @@
+/* Réinitialisation des styles de base */
+body, h1, h2, h3, p, ul, ol, li, figure, figcaption, table, th, td, form, fieldset, legend, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #F0F6F6;
+}
+
+/* Barre de navigation A DELETE */
+nav {
+    background-color: #F0F6F6;
+    padding: 10px;
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Image responsive */
+.responsive-image {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin-top: 0px;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #BBE6E4;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#musees h1 {
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #F0F6F6;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+#contact {
+    margin-top: 40px;
+}
+
+#contact h2 {
+    color: #333;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+
+
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    /* From https://css.glass */
+    background: rgba(0, 130, 252, 0.35);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.9px);
+    -webkit-backdrop-filter: blur(6.9px);
+
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+}
+
+.container:hover .overlay {
+    bottom: 0;
+    height: 100%;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Couleur normale du lien */
+.address-link a {
+    color: #084B83; /* Bleu par exemple, ajustez selon vos préférences */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Changement de couleur au survol du lien */
+.address-link a:hover {
+    color: #42BFDD; /* Nuance plus foncée de bleu au survol */
+}
+
+/* Styles généraux pour le texte dans les images */
+.text {
+    color: white;
+    font-size: 20px; /* Taille de base du texte */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* une règle media query pour ajuster la taille du texte sur des écrans plus petits */
+@media screen and (max-width: 768px) {
+    .text {
+        font-size: 16px; /* la taille pour les écrans plus petits si nécessaire */
+    }
+}
