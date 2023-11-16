@@ -125,4 +125,7 @@ main {
 }
 
 
-
+/* Ajoutez cette règle pour supprimer les marges sur la liste de la barre de navigation */
+.navbar ul {
+    margin: 0;
+}

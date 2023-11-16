@@ -12,6 +12,10 @@
   .menu-btn {
     color: #F0F6F6 ;
     cursor: pointer;
+    font-size: 18px; /* Choisissez la taille de police que vous préférez */
+    font-weight: bold; /* Pour mettre le texte en gras */
+    text-decoration: none; /* Pour enlever tout soulignement du texte */
+    font-family: 'Verdana', sans-serif;
   }
   
   
@@ -23,6 +27,8 @@
     align-items: left;
     text-align: left;
     flex-direction: column; /* Ajout de cette ligne pour aligner le texte en dessous */
+    font-family: 'Verdana', sans-serif;
+
   }
   
   
@@ -36,4 +42,37 @@
     color: #F0F6F6;
     font-weight: bold;
     font-size: 16px;
+    font-weight: bold; /* Pour mettre le texte en gras */
+    text-decoration: none; /* Pour enlever tout soulignement du texte */
+    font-family: 'Verdana', sans-serif;
   }
+  
+/* Styles pour le footer */
+footer {
+  background-color: #084B83;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Styles pour les liens sociaux dans le footer */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px; /* Ajoutez une marge au besoin */
+}
+
+.social-icons a {
+  margin: 0 10px;
+}
+
+.social-icons img {
+  width: 50px; /* Ajustez la taille selon vos besoins */
+  height: auto;
+}
+
+/* Style pour le texte de copyright dans le footer */
+.copyright {
+  color: #FFFFFF; /* Couleur du texte blanc */
+  margin-top: 10px;
+}

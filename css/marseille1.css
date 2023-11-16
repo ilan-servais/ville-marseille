@@ -88,10 +88,7 @@ article{
 
 footer{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    background-color: #72cff7;
-    padding: 50px;
     margin: 0;
 }
 
