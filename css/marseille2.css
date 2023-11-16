@@ -98,46 +98,7 @@
             padding: 0;
         }
 
-/* Styles pour la barre de navigation principale */
-.navbar {
-  background-color: #084B83;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: left;
-  text-align: left;
-  flex-direction: column; /* Ajout de cette ligne pour aligner le texte en dessous */
-}
 
-
-.menu-btn {
-  color: #F0F6F6 ;
-  cursor: pointer;
-}
-
-
-.nav-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  align-items: left;
-  text-align: left;
-  flex-direction: column; /* Ajout de cette ligne pour aligner le texte en dessous */
-}
-
-
-.nav-list li {
-  margin-right: 15px;
-}
-
-
-.nav-list a {
-  text-decoration: none;
-  color: #F0F6F6;
-  font-weight: bold;
-  font-size: 16px;
-}
 
 body {
   margin: 0;
