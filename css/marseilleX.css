@@ -1,52 +1,48 @@
 /* Styles pour la barre de navigation principale */
 .navbar {
-    background-color: #084B83;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: left;
-    text-align: left;
-    flex-direction: column; /* Ajout de cette ligne pour aligner le texte en dessous */
-  }
-   
-  .menu-btn {
-    color: #F0F6F6 ;
-    cursor: pointer;
-    font-size: 18px; /* Choisissez la taille de police que vous préférez */
-    font-weight: bold; /* Pour mettre le texte en gras */
-    text-decoration: none; /* Pour enlever tout soulignement du texte */
-    font-family: 'Verdana', sans-serif;
-  }
-  
-  
-  .nav-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: left;
-    text-align: left;
-    flex-direction: column; /* Ajout de cette ligne pour aligner le texte en dessous */
-    font-family: 'Verdana', sans-serif;
+  background-color: #084B83;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  text-align: left;
+  flex-direction: column; /* Ajout de cette ligne pour aligner le texte en dessous */
+}
 
-  }
-  
-  
-  .nav-list li {
-    margin-right: 15px;
-  }
-  
-  
-  .nav-list a {
-    text-decoration: none;
-    color: #F0F6F6;
-    font-weight: bold;
-    font-size: 16px;
-    font-weight: bold; /* Pour mettre le texte en gras */
-    text-decoration: none; /* Pour enlever tout soulignement du texte */
-    font-family: 'Verdana', sans-serif;
-  }
-  
+.menu-btn {
+  color: #F0F6F6;
+  cursor: pointer;
+  font-size: 18px; /* Choisissez la taille de police que vous préférez */
+  font-weight: bold; /* Pour mettre le texte en gras */
+  text-decoration: none; /* Pour enlever tout soulignement du texte */
+  font-family: 'Verdana', sans-serif;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: left;
+  text-align: left;
+  flex-direction: column; /* Ajout de cette ligne pour aligner le texte en dessous */
+  font-family: 'Verdana', sans-serif;
+}
+
+.nav-list li {
+  margin-right: 15px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #F0F6F6;
+  font-weight: bold;
+  font-size: 16px;
+  font-weight: bold; /* Pour mettre le texte en gras */
+  text-decoration: none; /* Pour enlever tout soulignement du texte */
+  font-family: 'Verdana', sans-serif;
+}
+
 /* Styles pour le footer */
 footer {
   background-color: #084B83;
@@ -75,4 +71,36 @@ footer {
 .copyright {
   color: #FFFFFF; /* Couleur du texte blanc */
   margin-top: 10px;
+}
+
+/* Media query pour ajuster les styles sur des écrans plus petits */
+@media screen and (max-width: 767px) {
+  .navbar {
+      flex-direction: row; /* Change la direction en ligne pour les écrans plus petits */
+      text-align: center; /* Centre le texte pour les écrans plus petits */
+      align-items: center;
+  }
+
+  .menu-btn {
+      margin-top: 10px; /* Ajoute de la marge au bouton du menu */
+  }
+
+  .nav-list {
+      flex-direction: row; /* Change la direction en ligne pour les écrans plus petits */
+      margin-top: 10px; /* Ajoute de la marge à la liste de navigation */
+  }
+
+  .nav-list li {
+      margin-right: 0; /* Supprime la marge à droite pour les écrans plus petits */
+      margin-bottom: 10px; /* Ajoute de la marge en bas pour les écrans plus petits */
+  }
+
+  .social-icons {
+      flex-direction: row; /* Change la direction en ligne pour les écrans plus petits */
+  }
+
+  .social-icons img {
+      width: 30px; /* Ajustez la taille des icônes sociales pour les écrans plus petits */
+      margin: 0 5px; /* Ajoutez de la marge aux icônes sociales pour les écrans plus petits */
+  }
 }

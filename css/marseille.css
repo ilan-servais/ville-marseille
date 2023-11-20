@@ -19,9 +19,7 @@ header {
 .header-content {
     max-width: 600px;
     margin: 0 auto;
-    
 }
-
 
 /* Styles pour l'image dans l'en-tête */
 header img {
@@ -76,3 +74,31 @@ article h2 {
     font-size: 22px;
 }
 
+/* Media query pour ajuster les styles sur des écrans plus petits */
+@media screen and (max-width: 767px) {
+    /* Ajoute ici les styles spécifiques pour les écrans très petits */
+    header h1 {
+        font-size: 20px;
+    }
+
+    article {
+        width: 100%;
+    }
+
+    .article-header img {
+        width: 100%;
+        float: none;
+        margin: 0;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .article-content {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    article h2 {
+        font-size: 20px;
+    }
+}

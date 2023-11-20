@@ -129,3 +129,24 @@ main {
 .navbar ul {
     margin: 0;
 }
+
+/* Styles généraux pour toutes les résolutions */
+/* Media query pour les écrans larges (>= 1200px) */
+@media screen and (min-width: 1200px) {
+    /* Ajoute des styles spécifiques pour les écrans larges */
+}
+
+/* Media query pour les écrans moyens (992px - 1199px) */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    /* Ajoute des styles spécifiques pour les écrans moyens */
+}
+
+/* Media query pour les écrans petits (768px - 991px) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    /* Ajoute des styles spécifiques pour les écrans petits */
+}
+
+/* Media query pour les écrans très petits (< 768px) */
+@media screen and (max-width: 767px) {
+    /* Ajoute des styles spécifiques pour les écrans très petits */
+}
